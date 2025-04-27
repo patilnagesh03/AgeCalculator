@@ -83,36 +83,40 @@
     color: #ffff76;
 }
 
-/* Mobile styles (small screens) */
-@media (max-width: 768px) {
-  body {
-    padding: 10px;
-    font-size: 16px;
+/* Mobile styles (small screens) */@media (max-width: 768px) {
+  .calculator {
+    padding: 30px 20px;
   }
 
-  header, nav, main, footer {
+  .calculator h1 {
+    font-size: 28px;
+  }
+
+  button {
     width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-  }
-
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav ul li {
-    margin: 10px 0;
+    font-size: 18px;
   }
 }
 
-/* Extra small devices (phones, less than 480px) */
 @media (max-width: 480px) {
-  header h1 {
+  .calculator {
+    width: 90%;
+    padding: 20px 10px;
+  }
+
+  .calculator h1 {
     font-size: 24px;
   }
 
-  nav ul li a {
+  input[type="date"] {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  #result {
     font-size: 18px;
   }
 }
