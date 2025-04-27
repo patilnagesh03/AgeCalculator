@@ -82,3 +82,37 @@
 #result span{
     color: #ffff76;
 }
+
+/* Mobile styles (small screens) */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  header, nav, main, footer {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+}
+
+/* Extra small devices (phones, less than 480px) */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 24px;
+  }
+
+  nav ul li a {
+    font-size: 18px;
+  }
+}
